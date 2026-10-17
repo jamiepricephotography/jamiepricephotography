@@ -1,0 +1,118 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Client Reviews</title>
+    <link rel="stylesheet" href="assets/style.css">
+</head>
+
+<body>
+
+    <header>
+        <nav class="navbar">
+            <a href="index.html" class="logo">JAMIE PRICE PHOTOGRAPHY</a>
+
+            <div class="nav-links">
+    <a href="index.html">Home</a>
+    <a href="aboutme.html">About Me</a>
+	<a href="portfolio.html">Portfolio</a>
+    <a href="mygear.html">My Gear</a>
+                <a href="reviews.html" class="active">Reviews</a>
+            </div>
+        </nav>
+    </header>
+
+    <main class="reviews-page">
+
+        <section class="reviews-hero">
+            <p class="reviews-label">YOUR FEEDBACK MATTERS</p>
+            <h1>Client Reviews</h1>
+            <p>
+                Worked with me? I'd appreciate hearing about
+                your experience and what you thought of the photos.
+            </p>
+        </section>
+
+        <section class="review-content">
+
+            <div class="review-intro">
+                <h2>Leave a Review</h2>
+                <p>
+                    Your feedback helps me improve my work
+                    and helps future clients know what to expect.
+                </p>
+            </div>
+
+            <form class="review-form"
+                  action="https://formspree.io/f/mkjoyagb"
+                  method="POST">
+
+                <div class="form-group">
+                    <label for="name">Your name</label>
+                    <input
+                        type="text"
+                        id="name"
+                        name="name"
+                        placeholder="Enter your name"
+                        required>
+                </div>
+
+                <div class="form-group">
+                    <label for="email">Email address</label>
+                    <input
+                        type="email"
+                        id="email"
+                        name="email"
+                        placeholder="Enter your email"
+                        required>
+                </div>
+
+                <div class="form-group">
+                    <label for="rating">Your rating</label>
+                    <select id="rating" name="rating" required>
+                        <option value="">Select a rating</option>
+                        <option value="5 stars">★★★★★ - Excellent</option>
+                        <option value="4 stars">★★★★☆ - Very good</option>
+                        <option value="3 stars">★★★☆☆ - Good</option>
+                        <option value="2 stars">★★☆☆☆ - Poor</option>
+                        <option value="1 star">★☆☆☆☆ - Very poor</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label for="review">Your review</label>
+                    <textarea
+                        id="review"
+                        name="review"
+                        rows="6"
+                        placeholder="Tell me about your experience..."
+                        required></textarea>
+                </div>
+
+                <label class="consent">
+                    <input
+                        type="checkbox"
+                        name="permission_to_publish"
+                        value="Yes"
+                        required>
+                    I'm happy for my review to be displayed on this website.
+                </label>
+
+                <button type="submit" class="review-submit">
+                    Submit Review
+                </button>
+
+            </form>
+
+        </section>
+
+    </main>
+
+    <footer class="reviews-footer">
+        <p>&copy; 2026 My Photography. All rights reserved.</p>
+    </footer>
+
+</body>
+</html>
